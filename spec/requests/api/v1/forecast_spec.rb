@@ -8,7 +8,7 @@ RSpec.describe 'Forecast Api' do
       expect(response.status).to eq(200)
 
       results = JSON.parse(response.body, symbolize_names: true)[:data]
-      require "pry"; binding.pry
+
       expect(results).to be_a Hash
     end
   end
