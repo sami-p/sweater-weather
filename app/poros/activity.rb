@@ -3,9 +3,9 @@ class Activity
               :type,
               :participants,
               :price
-              
+
   def initialize(info)
-    @title = info[:title]
+    @title = info[:activity]
     @type = info[:type]
     @participants = info[:participants]
     @price = info[:price]
