@@ -12,11 +12,11 @@ class ActivitySerializer
           temperature: forecast.temperature
         },
         activities: [
-            {title: activity.name,
+            {title: activity.title,
             type: activity.type,
             participants: activity.participants,
             price: activity.price},
-            {title: activity.name,
+            {title: activity.title,
             type: activity.type,
             participants: activity.participants,
             price: activity.price
