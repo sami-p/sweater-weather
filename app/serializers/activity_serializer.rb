@@ -1,21 +1,21 @@
 class ActivitySerializer
 
-  def self.activity(forecast, location, activities)
+  def self.activity(relaxation, activity, destination, weather)
     {
     data: {
-      id: null,
+      id: nil,
       type: "activities",
       attributes: {
-        destination: location,
+        destination: destination,
         forecast: {
-          summary: forecast.conditions,
-          temperature: forecast.temperature
+          summary: weather.conditions,
+          temperature: weather.temperature
         },
         activities: [
-            {title: activity.title,
-            type: activity.type,
-            participants: activity.participants,
-            price: activity.price},
+            {title: relaxation.title,
+            type: relaxation.type,
+            participants: relaxation.participants,
+            price: relaxation.price},
             {title: activity.title,
             type: activity.type,
             participants: activity.participants,
