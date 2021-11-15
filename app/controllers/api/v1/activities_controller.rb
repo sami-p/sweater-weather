@@ -10,7 +10,7 @@ class Api::V1::ActivitiesController < ApplicationController
     elsif weather.temperature < 50
       activity = ActivityFacade.activity("cooking")
     else
-      
+      render json: { error: 'bad request' }, status: :bad_request
     end
     render json: ActivitySerializer.activity(relaxation, activity, params[:destination], weather)
   end
