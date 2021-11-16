@@ -1,5 +1,4 @@
 class UnsplashSerializer
-  include FastJsonapi::ObjectSerializer
 
   def self.photo_info(info)
     {
@@ -8,12 +7,12 @@ class UnsplashSerializer
         id: nil,
         attributes: {
           image: {
-            location: info.description,
+            location: info.location,
             image_url: info.photo,
             credit: {
               source: info.source,
-              author: info.artist_name,
-              author_profile: info.artist_profile,
+              artist: info.artist,
+              artist_profile: info.artist_profile,
             }
           }
         }

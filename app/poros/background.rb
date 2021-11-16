@@ -1,15 +1,15 @@
 class Background
-  attr_reader :description,
+  attr_reader :location,
               :photo,
               :source,
-              :photographer_name,
-              :photographer_profile
+              :artist,
+              :artist_profile
 
   def initialize(info)
-    @description = info[:description]
+    @location = info[:description]
     @photo = info[:urls][:full]
     @source = info[:links][:self]
-    @artist_name = info[:user][:name]
-    @artist_profile = info[:user][:links][:photos]
+    @artist = info[:user][:name]
+    @artist_profile = info[:user][:links][:self]
   end
 end

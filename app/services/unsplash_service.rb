@@ -1,15 +1,7 @@
-class WeatherService
-  def self.get_data(url)
-    Faraday.new(url)
-  end
+class UnsplashService
 
   def self.background_photo(location)
-    response = get_data("https://api.unsplash.com/search/photos").get do |f|
-       f.params['client_id'] = ENV['unsplash_api']
-       f.params['query'] = location
-       f.params['page'] = 1
-       f.params['per_page'] = 1
-     end
+    response = Faraday.get("https://api.unsplash.com/search/photos?client_id=#{ENV['unsplash_api']}&query=#{location}")
     JSON.parse(response.body, symbolize_names: true)
   end
 end
