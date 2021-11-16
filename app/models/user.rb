@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  include ApiKey
   before_validation :assign_api_key
 
   validates :email, :password_digest, :api_key, presence: true
@@ -7,9 +8,7 @@ class User < ApplicationRecord
 
   has_secure_password
 
-  private
-
   def assign_api_key
-    self.api_key = ApiKey.generator
+    self.api_key = ApiKey.generate
   end
 end
