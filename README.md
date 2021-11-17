@@ -49,6 +49,13 @@ A service-oriented architecture build by building and exposing APIs in order to 
 5. Run `bundle exec figaro install`
 6. Add your API keys to your `config/application.yml file`
 
+## Endpoints
+1. `GET /api/v1/forecast`
+2. `GET /api/v1/backgrounds`
+3. `POST /api/v1/users`
+4. `POST /api/v1/sessions`
+5. `POST /api/v1/road_trip`
+
 <!-- Markdown link & img dfn's -->
 [linkedin-badge]:         https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white
 [github-badge]:           https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
