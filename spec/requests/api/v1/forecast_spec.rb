@@ -25,7 +25,7 @@ RSpec.describe 'Forecast Api' do
       expect(current).to have_key(:temperature)
       expect(current).to have_key(:feels_like)
       expect(current[:humidity]).to be_an Integer
-      expect(current[:uvi]).to be_an Integer
+      expect(current[:uvi]).to be_a Float
       expect(current[:visibility]).to be_an Integer
       expect(current[:conditions]).to be_a String
       expect(current[:icon]).to be_a String
