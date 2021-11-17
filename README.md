@@ -3,6 +3,7 @@
 ## Project Description
 A service-oriented architecture build by building and exposing APIs in order to provide current weather conditions for a given location, and plan a road trip with predicted arrival time forecast.
 
+Duration: 5 days
 
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
