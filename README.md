@@ -13,6 +13,7 @@ A service-oriented architecture build by building and exposing APIs in order to 
 
 ## Versions
 Ruby: 2.7.2
+
 Rails: 6.1.4
 
 ## Development
