@@ -25,4 +25,11 @@ class WeatherFacade
       Hourly.new(hash)
     end
   end
+
+  def self.all_hourly(latitude, longitude)
+    location = WeatherService.location(latitude, longitude)
+    location[:hourly].map do |hash|
+      Hourly.new(hash)
+    end
+  end
 end
