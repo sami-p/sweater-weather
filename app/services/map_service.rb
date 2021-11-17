@@ -12,7 +12,11 @@ class MapService
   end
 
   def self.directions(from, to)
-    response = get_data("http://open.mapquestapi.com/directions/v2/route?key=#{ENV['maps_api'}&from=#{from}&to=#{to}")
+    response = get_data("http://open.mapquestapi.com/directions/v2/route").get do |f|
+      f.params['key'] = ENV['maps_api']
+      f.params['from'] = from
+      f.params['to'] = to
+    end
     JSON.parse(response.body, symbolize_names: true)
   end
 end
