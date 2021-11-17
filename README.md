@@ -13,7 +13,8 @@ A service-oriented architecture build by building and exposing APIs in order to 
 
 ## Ruby version: 2.7.2
 
-## API Key Links (Make sure to save your API keys as the following variable names in your application.yml file)
+## API Key Links 
+(Make sure to save your API keys as the following variable names in your application.yml file)
 - [maps_api](https://developer.mapquest.com/documentation/geocoding-api/)
 - [weather_api](https://openweathermap.org/api/one-call-api)
 - [unsplash_api](https://unsplash.com/developers)
