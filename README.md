@@ -18,7 +18,9 @@ Learning Goals:
 - [unsplash_api](https://unsplash.com/developers)
 
 * Schema
-(https://user-images.githubusercontent.com/79054409/142213250-e3832cd8-b040-4402-aefc-e2fced9d05bc.png)
+
+![Screen Shot 2021-11-17 at 7 00 35 AM](https://user-images.githubusercontent.com/79054409/142214696-07c17037-4b2c-428c-8690-71459c7d1284.png)
+
 
 * Installation
 
