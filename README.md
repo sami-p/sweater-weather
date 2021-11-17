@@ -28,7 +28,7 @@ A service-oriented architecture build by building and exposing APIs in order to 
 
 1. Fork and/or clone [this repository](https://github.com/sami-p/sweater-weather)
 2. Cd into your project directory 
-3. Run bundle install 
-4. Run rails db:{drop,create,migrate}
-5. Run bundle exec figaro install
-6. Add your API keys to your config/application.yml file
+3. Run `bundle install `
+4. Run `rails db:{drop,create,migrate}`
+5. Run `bundle exec figaro install`
+6. Add your API keys to your `config/application.yml file`
