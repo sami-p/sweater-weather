@@ -12,9 +12,8 @@ A service-oriented architecture build by building and exposing APIs in order to 
 - Research, select, and consume an API based on your needs as a developer
 
 ## Versions
-Ruby: 2.7.2
-
-Rails: 6.1.4
+`Ruby:` 2.7.2
+`Rails:` 6.1.4
 
 ## Development
 ![Ruby on Rails][ruby-on-rails-badge]
