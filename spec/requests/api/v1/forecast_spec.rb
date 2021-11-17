@@ -8,7 +8,7 @@ RSpec.describe 'Forecast Api' do
       expect(response.status).to eq(200)
 
       results = JSON.parse(response.body, symbolize_names: true)[:data]
-      # require "pry"; binding.pry
+
       expect(results).to be_a Hash
       expect(results[:type]).to eq('forecast')
       expect(results).to have_key(:attributes)
@@ -54,4 +54,12 @@ RSpec.describe 'Forecast Api' do
       expect(hourly).to_not have_key(:pressure)
     end
   end
+
+  # describe 'Invalid Location' do
+  #   it 'renders an error if location is invalid' do
+  #     get '/api/v1/forecast?location=$$$'
+  #
+  #     expect(response.status).to eq(400)
+  #   end
+  # end
 end
