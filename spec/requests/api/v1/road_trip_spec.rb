@@ -17,6 +17,7 @@ RSpec.describe 'Road Trip Api' do
     expect(response.status).to eq(200)
 
     results = JSON.parse(response.body, symbolize_names: true)[:data]
+
     expect(results).to be_a Hash
   end
 

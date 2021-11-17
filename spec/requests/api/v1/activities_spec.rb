@@ -22,7 +22,7 @@ RSpec.describe 'Activities Endpoint' do
       expect(results[:attributes][:activities].first).to have_key(:participants)
       expect(results[:attributes][:activities].first).to have_key(:price)
       expect(results[:attributes][:activities].first[:type]).to eq("relaxation")
-      expect(results[:attributes][:activities].last[:type]).to eq("busywork")
+      expect(results[:attributes][:activities].last[:type]).to eq("recreational")
     end
   end
 end
