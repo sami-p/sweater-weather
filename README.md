@@ -26,7 +26,7 @@ A service-oriented architecture build by building and exposing APIs in order to 
 
 ## Installation
 
-1. Fork and/or clone ![this repository](https://github.com/sami-p/sweater-weather)
+1. Fork and/or clone [this repository](https://github.com/sami-p/sweater-weather)
 2. Cd into your project directory 
 3. Run bundle install 
 4. Run rails db:{drop,create,migrate}
