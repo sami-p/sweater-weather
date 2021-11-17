@@ -33,4 +33,21 @@ RSpec.describe 'Road Trip Api' do
 
     expect(response.status).to eq(401)
   end
+
+  # it 'renders error for impossible route', :vcr do
+  #   user = User.create!({email: 'shessolucky@shesastar.com',
+  #                        password: 'britneyspears',
+  #                        password_confirmation: 'britneyspears',
+  #                        api_key: 'iVpu4bGGDYYDtP2mD5b0Rgtt'
+  #                       })
+  #   body = {origin: 'New York, NY',
+  #           destination: 'London, UK',
+  #           api_key: 'iVpu4bGGDYYDtP2mD5b0Rgtt'}
+  #
+  #  headers = { 'CONTENT_TYPE' => 'application/json', "Accept": 'application/json' }
+  #
+  #  post '/api/v1/road_trip', headers: headers, params: body, as: :json
+  #
+  #  expect(response.status).to eq(401)
+ # end
 end
