@@ -1,6 +1,7 @@
 # Sweater Weather
 
-## Project Description: A service-oriented architecture to provide current weather conditions for a given locations, and plan a road trip with predicted arrival time                      forecast.
+## Project Description: 
+A service-oriented architecture build by building and exposing APIs in order to provide current weather conditions for a given location, and plan a road trip with predicted arrival time forecast.
 
 
 ## Learning Goals: 
