@@ -15,14 +15,14 @@ RSpec.describe 'Activities Endpoint' do
       expect(results[:type]).to eq("activities")
       expect(results).to have_key(:attributes)
       expect(results[:attributes][:destination]).to eq(destination)
-      expect(results[:attributes][:forecast][:temperature]).to be < 50
+      expect(results[:attributes][:forecast][:temperature]).to be > 50
       expect(results[:attributes][:activities].length).to eq(2)
       expect(results[:attributes][:activities].first).to have_key(:title)
       expect(results[:attributes][:activities].first).to have_key(:type)
       expect(results[:attributes][:activities].first).to have_key(:participants)
       expect(results[:attributes][:activities].first).to have_key(:price)
       expect(results[:attributes][:activities].first[:type]).to eq("relaxation")
-      expect(results[:attributes][:activities].last[:type]).to eq("cooking")
+      expect(results[:attributes][:activities].last[:type]).to eq("busywork")
     end
   end
 end
