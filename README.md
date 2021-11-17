@@ -51,18 +51,23 @@ A service-oriented architecture build by building and exposing APIs in order to 
 
 ## Endpoints
 1. `GET /api/v1/forecast`
+    
     Returns weather current, daily, and hourly forecast for provide query location param. Ex: `GET /api/v1/forecast?location=chicago,il`
     
 2. `GET /api/v1/backgrounds`
+    
     Returns background image and image data for provided query location param. Ex: `GET /api/v1/forecast?location=chicago,il`
     
 3. `POST /api/v1/users`
+    
     Creates a new user and generates a random API key for each registered user.
 
 4. `POST /api/v1/sessions`
+    
     Will return an already registerd user's email and API key if their log in credentials are a valid.
 
 5. `POST /api/v1/road_trip`
+    
     Returns a road trip's travel time and predicted estimated arrival time weather forecast.
 
 <!-- Markdown link & img dfn's -->
