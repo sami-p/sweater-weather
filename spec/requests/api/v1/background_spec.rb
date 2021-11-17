@@ -16,4 +16,10 @@ RSpec.describe "Background API" do
     expect(results[:attributes][:image][:credit]).to have_key(:artist)
     expect(results[:attributes][:image][:credit]).to have_key(:artist_profile)
   end
+  
+  it 'renders error if location is not included' do
+    get '/api/v1/backgrounds'
+
+    expect(response.status).to eq(400)
+  end
 end
