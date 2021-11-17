@@ -40,7 +40,7 @@ A service-oriented architecture build by building and exposing APIs in order to 
 ![Screen Shot 2021-11-17 at 7 00 35 AM](https://user-images.githubusercontent.com/79054409/142214696-07c17037-4b2c-428c-8690-71459c7d1284.png)
 
 
-## Installation
+## Local Setup
 
 1. Fork and/or clone [this repository](https://github.com/sami-p/sweater-weather)
 2. Cd into your project directory 
