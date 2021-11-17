@@ -1,17 +1,33 @@
 # Sweater Weather
 
-## Project Description: 
+## Project Description
 A service-oriented architecture build by building and exposing APIs in order to provide current weather conditions for a given location, and plan a road trip with predicted arrival time forecast.
 
 
-## Learning Goals: 
+## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
 - Expose an API that requires an authentication token
 - Expose an API for CRUD functionality
 - Determine completion criteria based on the needs of other developers
 - Research, select, and consume an API based on your needs as a developer
 
-## Ruby version: 2.7.2
+## Versions
+Ruby: 2.7.2
+Rails: 6.1.4
+
+## Development
+![Ruby on Rails][ruby-on-rails-badge]
+![Git][git-badge]
+![Atom][atom-badge]
+![Faraday][faraday-badge]
+![Postman][postman-badge]
+
+## Testing
+![RSpec][rspec-badge]
+![Simplecov][simplecov-badge]
+![VCR][vcr-badge]
+![Pry][pry-badge]
+![Shoulda Matchers][shoulda-matchers-badge]
 
 ## API Key Links 
 (Make sure to save your API keys as the following variable names in your application.yml file)
